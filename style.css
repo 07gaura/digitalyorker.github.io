@@ -7,10 +7,9 @@ header{
 }
 
 header ul{
-    margin-left: 200px;
     position: relative;
     display: flex;
-    left: 100%;
+    left: 90%;
 }
 
 header ul li{
@@ -123,15 +122,13 @@ header ul li{
 }
 
 .container-3 .first-block{
-    width: 25%;
+    width: 30%;
     height: 500px;
     top: 20%;
     position: relative;
 }
 
 .container-3 .second-block{
-    
-    justify-content: center;
     position: relative;
     width: 70%;
     height: 720px;
@@ -164,16 +161,16 @@ header ul li{
 
 
 .container-4{
-    padding: 250px 100px 50px 200px;
+    padding: 250px 100px 50px 125px;
     width: 85%;
-    height: 900px;
+    height: 700px;
     overflow: hidden;
     background-image: url('images/img3.jpg');
     background-size: cover;
 }
 .container-4 .blocks{
     width: 80%;
-    margin: 250px 50px 50px 50px;
+    margin:0px 50px 50px 50px;
     text-align: center;
 }
 .container-4 h1{
@@ -223,7 +220,7 @@ header ul li{
 
 .container-5 .first-block{
     width: 30%;
-    height: 600px;
+    height: 500px;
     background-color: white;
     padding: 10px ;
     text-align: center;
@@ -239,7 +236,7 @@ header ul li{
 
 .container-5 .second-block{
     width: 40%;
-    height: 600px;
+    height: 500px;
     padding: 10px ;
     float: left;
     text-align: center;
@@ -248,7 +245,7 @@ header ul li{
 }
 
 .container-5 .second-block input{
-    width: 660px;
+    width: 460px;
     padding: 15px;
     font-family: copperplate;
     font-size: 20px;
