@@ -1,15 +1,31 @@
 
+body{
+    margin: 0px;
+    padding: 0px;
+}
 header{
+    width: 100%;
     padding: 10px;
     display: flex;
     position: fixed;
     z-index: 1;
+    transition: 0.5s;
+}
+
+.active{
+    color: #f57d1e;
+    font-family:  copperplate;
+}
+
+.scrollheader{
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
 }
 
 header ul{
     position: relative;
     display: flex;
-    left: 90%;
+    left: 45%;
 }
 
 header ul li{
@@ -17,13 +33,15 @@ header ul li{
     margin: 10px;
     font-family: copperplateregular;
     font-size: 22px;
+    z-index: 1;
 }
 
 .container-1{
     width: 100%;
-    height: 1000px;
+    height: 760px;
     background-image: url('images/img2.png');
-    background-position:right 0% bottom 0%;
+    background-size: contain;
+    background-position: right 0%;
     background-repeat: no-repeat;
 }
 
@@ -35,6 +53,7 @@ header ul li{
     color:#f57d1e;
     font-family: copperplate;
     font-size: 70px;
+    animation: load 5s linear;
 }
 
 .container-1 span:nth-child(1){
@@ -56,6 +75,13 @@ header ul li{
     font-size: 18px;
 }
 
+@keyframes load{
+    0%{
+       color: white;
+    }
+
+}
+
 .container-1 a{
     top: 35%;
     left: -10%;
@@ -66,11 +92,20 @@ header ul li{
     box-shadow: 5px 5px rgba(0, 0, 0, 0.151);
     background-color: #f57d1e;
     color: white;
+    animation: social-icons 5s infinite linear;
+}
+
+
+@keyframes social-icons{
+    50%{
+        color: blue;
+    }
 }
 
 .container-2{
-    width: 100%;
-    height: auto;
+    padding: 20px 00px 0px 150px;
+    width: 89%;
+    height: 600px;
 }
 
 .container-2 h1{
@@ -81,14 +116,23 @@ header ul li{
     font-family: copperplate;
 }
 
+
+
 .block{
     width: 20%;
     height: 400px;
-    margin: 25px 20px 25px 55px;
+    margin: 10px;
     background-color: #f4f2f0;
     border-radius: 50px;
     text-align: center;
     float: left;
+    
+}
+
+.block:hover i{
+    color: black;
+    font-size: 32px;
+    box-shadow: 2px 2px black;
 }
 
 .block i{
@@ -100,6 +144,7 @@ header ul li{
     border-radius: 50%;
     font-size: 30px;
     color: white;
+    transition: 0.5s linear;
 }
 
 .block a{
@@ -143,6 +188,10 @@ header ul li{
     font-family: copperplate;
 }
 
+.container-3 .second-block p{
+    text-align: left;
+}
+
 .second-block hr{
     top: -5%;
     position: relative;
@@ -161,8 +210,10 @@ header ul li{
 
 
 .container-4{
-    padding: 250px 100px 50px 125px;
-    width: 85%;
+    top: 100px;
+    position: relative;
+    padding: 250px 100px 50px 200px;
+    width: 80%;
     height: 700px;
     overflow: hidden;
     background-image: url('images/img3.jpg');
@@ -224,7 +275,7 @@ header ul li{
     background-color: white;
     padding: 10px ;
     text-align: center;
-    margin-left: 250px;
+    margin-left: 200px;
     border-radius: 20px 0px 0px 20px;
     float: left;
     overflow-x: auto;
