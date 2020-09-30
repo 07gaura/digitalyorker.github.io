@@ -74,6 +74,10 @@ header ul li{
     
 }
 
+.container-1 .button:hover{
+    cursor: pointer;
+}
+
 .btn1{
     background-color: #403e3d;
     
@@ -117,7 +121,7 @@ header ul li{
 }
 
 .container-2 .block{
-    width: 250px;    
+    width: 247px;    
     height: 150px;
     padding: 10px;
     display: flex;
@@ -126,6 +130,11 @@ header ul li{
     border-radius: 10px;
     background-color: #faf6f6;
     float: left;
+    transition: 0.5s linear;
+}
+
+.container-2 .block:hover i{
+    color: #0bfc9c;
 }
 
 .container-2 .block i{
