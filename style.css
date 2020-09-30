@@ -3,6 +3,16 @@ body{
     margin: 0px;
     padding: 0px;
 }
+hr{
+    top: -20px;
+    position: relative;
+    width: 450px;
+    height: 5px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg,#0bfc9c, #36fef4);
+}
 header{
     width: 100%;
     padding: 5px;
@@ -159,6 +169,17 @@ header ul li{
 .container-3{
     width: 100%;
     height: 500px;
+}
+
+.container-3 hr{
+    top: -30px;
+    position: relative;
+    width: 200px;
+    height: 5px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg,#0bfc9c, #36fef4);
 }
 
 .container-3 .first-block{
